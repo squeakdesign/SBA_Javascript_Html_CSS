@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/images/booklogo.jpeg" class="logo">
+            <nav>
+            <ul>
+                <li><a href="/pages/home.html">Home</a></li>
+                <li><a href="/pages/login.html">Login</a></li>
+                <li><a href="/pages/register1.html">Register</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="container2">
+            
+            <form id="form" action="./home.html">
+                <!-- <img src="/images/user.webp"> -->
+                <img src="/images/user3.webp">
+                <h1>Login</h1>
+        
+                <div class="input-control">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="text" />
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <label for="password">Password</label>
+                  <input id="password" name="password" type="password" />
+                  <div class="error"></div>
+                </div>
+                <button id="sub" type="submit">Sign in</button>
+              </form>
+            </div>
+        
+            
+            <script type="module" src="../js/loginvalidation.js"></script>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

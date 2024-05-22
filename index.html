@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+:root {
+    --base-color: #171717;
+    --secondary-color: #a1460e;
+    --action-color: #cc6d3d;
+    --layover-color: #d2e1f36c;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+   
+}
+body{
+    background:linear-gradient(to bottom right, #5b4e07, #462d20ac, #9e5206);
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .container{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)),url("../images/bg1.jpeg");
+    background-position: center;
+    background-size:cover ;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+  .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width: 50px;
+    cursor:pointer;
+
+  }
+  nav{
+    flex:1;
+    text-align: right;
+  }
+  nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-left:60px;
+
+  }
+  nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+    transition:text-shadow 0.3s ease;
+  }
+
+  a:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white;
+  }
+  .row{
+    display:flex;
+    height:88% ;
+    align-items: center;
+  }
+  .col{
+    flex-basis: 50%;
+    
+    
+  }
+  h1{
+    color:#fff;
+    font-size: 50px;
+  }
+  p{
+    color: #fff;
+    font-size: 15px;
+    line-height:20px;
+    text-align: left;
+  }
+  button{
+    width:180px;
+    color:#000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+button:hover{
+background: whitesmoke;
+color: #ba4303;
+
+box-shadow: 2px 2px 5px #00000056;
+transform: scale(120%);
+
+
+}
+.flex-container{
+    display: flex;
+    
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)),url("../images/bg1.jpeg");
+
+}
+.card{
+    
+    width:200px;
+    height: 230px;
+    display:inline-flexbox;
+    flex-flow: row wrap;
+  
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 10px;
+   
+    
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url("/images/classicbooks.jpg");
+    background-position: center;  
+}
+.card2{
+    background-image: url("/images/sciencefiction.jpeg");
+    background-position: center;  
+}
+.card3{
+    background-image: url("/images/fantasy.jpeg");
+    background-position: center;  
+}
+.card4{
+    background-image: url("/images/fairytales.jpeg");
+    background-position: center;  
+}
+.card5{
+    background-image: url("/images/horror.jpeg");
+    background-position: center;  
+}
+.card6{
+    background-image: url("/images/Thriller.jpeg");
+    background-position: center;  
+}
+
+.card:hover{
+    transform:translateY(-20px) ;
+    /* transform: scale(150%); */
+}
+h5{
+    color:#fff ;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+/* ----------------- */
+section{
+    width:100%;
+    height: 400px;
+    margin:80px auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)), url("/images/book-bg3.jpeg");
+    background-position: center;
+    background-size:cover ;
+
+
+}
+.title{
+    background-color: #5b070356;
+    margin-top: 50px;
+}
+
+ .title h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size:6vmin ;
+    padding-top: 15px;
+    color:#ef9330;
+
+}
+.line{
+    width:150px;
+    height:4px;
+    background:#9e013d;
+    margin:10px auto;
+}
+
+table{
+    
+
+    height:200px;
+    width:80%;
+    margin-left: 130px;
+    margin-top: 30px;
+    background-color: #faaa55;
+    text-align: center;
+    border-radius: 10px;
+    border-spacing: 2;
+    border-collapse: collapse;
+    box-shadow: 0 2px 12px rgba(32,32,32,.3);
+    
+
+}
+th{
+
+    background:linear-gradient(to bottom right, #f7ac2a, #643607ac, #9e5c15);
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+}
+
+th,td{
+    padding:10px 15px;
+}
+td{
+    font-weight: bold;
+}
+tr:nth-child(odd){
+    background-color: #7a5a39ac;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+footer{
+    background-color: #111;
+
+}
+.footerContainer{
+    width:100%;
+    padding:70px 30px 20px;
+
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration:none ;
+    padding:10px;
+    background-color: rgb(251, 128, 20);
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font: size 3em;
+    color:black;
+    opacity:0.9;
+}
+.socialIcons a :hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   list-style: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin:20px;
+    
+    list-style: none;
+    font-size: 1.3em;
+    opacity:0.7;
+    transition:0.5s;
+}
+.footerNav ul li a:hover{
+    opacity:1;
+}
+.footerBottom{
+    color:white;
+    text-align: center;
+    margin-top: 15px;
+}
+.designer{
+    opacity:0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin:0px 5px;
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="navbar">
+            <img src="/images/booklogo.jpeg" class="logo">
+            <nav>
+            <ul>
+                <li><a href="/pages/home.html">Home</a></li>
+                <li><a href="/pages/login.html">Login</a></li>
+                <li><a href="/pages/register1.html">Register</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Ebooks</h1>
+                <p>
+                    How do you press a wildflower into the pages of an e-book?.Happiness is the state when
+                    nothing is missing,When nothing is missing, your mind shuts down and stops running.
+                </p>
+                <button type="button" style="font-size:15px;font-weight:bold;">Explore</button>
+            </div>
+
+            <div class="col">
+              <div class="flex-container">
+                <div class="card card1">
+                    <h5>Classic Books</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+                <div class="card card2">
+                    <h5>ScienceFiction Books</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+                <div class="card card3">
+                    <h5>Fantasy Books</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+                <div class="card card4">
+                    <h5>Fairytales</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+                <div class="card card5">
+                    <h5>Horror Stories</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+                <div class="card card6">
+                    <h5>Thriller</h5>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipscing</p>
+                </div>
+
+            </div>
+            </div>
+
+
+            </div>
+    </div>
+
+    <section>
+        <div class="title">
+            <h1> New Arrivals</h1>
+            <div class="line"></div>
+            <!--  -->
+           
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Classic">Classic</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Horror">Horror</option>
+              </select>
+              
+              <table id="dataTable">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="Fiction">
+                    <td>1</td>
+                    <td>Option B</td>
+                    <td>Sheryl Sandberg</td>
+                    <td>Fiction</td>
+                    <td>$28.00</td>
+                  </tr>
+                  <tr class="Classic">
+                    <td>2</td>
+                    <td>The 5AM Club</td>
+                    <td>Robin Sharma</td>
+                    <td>Classic</td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr class="Fantasy">
+                    <td>3</td>
+                    <td>Atomic Habits</td>
+                    <td>James Clear</td>
+                    <td>Fantasy</td>
+                    <td>$35.00</td>
+                  </tr>
+                  <tr class="Horror">
+                    <td>4</td>
+                    <td>Range</td>
+                    <td>David Epstein</td>
+                    <td>Horror</td>
+                    <td>$30.00</td>
+                  </tr>
+                  <tr class="Thriller">
+                    <td>5</td>
+                    <td>Zero to One</td>
+                    <td>Peter Theil</td>
+                    <td>Thriller</td>
+                    <td>$25.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <script>
+              <!-- <script src="/js/home.js"> -->
+                // JavaScript code
+document
+  .getElementById("categorySelect")
+  .addEventListener("change", function () {
+    const category = this.value;
+    const table = document.getElementById("dataTable");
+    const tableBody = table.querySelector("tbody");
+    const tableRows = Array.from(tableBody.querySelectorAll("tr"));
+
+    tableRows.forEach((row) => {
+      if (row.classList.contains(category) || category === "all") {
+        row.style.display = "table-row";
+      } else {
+        row.style.display = "none";
+      }
+    });
+
+    // Adjust table height
+    const visibleRows = tableBody.querySelectorAll(
+      'tr[style="display: table-row;"]'
+    );
+    let totalHeight = 0;
+    visibleRows.forEach((row) => {
+      totalHeight += row.clientHeight;
+    });
+    table.style.height = totalHeight + "px";
+  });
+
+              </script>
+          
+        </div>
+
+
+        <footer>
+            <div class="footerContainer">
+   
+               <div class="socialIcons">
+                   <a href=""><i class="fa-brands fa-facebook"></i></a>
+                   <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   <a href=""><i class="fa-brands fa-twitter"></i></a>
+                   <a href=""><i class="fa-brands fa-youtube"></i></a>
+               </div>
+               <div class="footerNav">
+                   <ul>
+                       <li><a href="">Home</a></li>
+                       <li><a href="">About</a></li>
+                       <li><a href="">Contact Us</a></li>
+                       <li><a href="">News</a></li>
+   
+                   </ul>
+                   <div class="footerBottom">
+                       <p style="text-align: center;"> Copyright &copy; 2024 ;  Designed by <span class="designer">Linta Antony</span></p>
+                   </div>
+               </div>
+              
+            </div>
+           </footer>
+         </section>
+         
+       
+</body>
+</html>
